@@ -1,0 +1,43 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:background="@color/cardBackgroundColor"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.caregiving.services.android.caregiver.fragments.CareGiverDemographicsFragment">
+
+    <FrameLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_demographic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:divider="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

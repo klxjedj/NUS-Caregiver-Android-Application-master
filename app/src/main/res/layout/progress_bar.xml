@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_data_progress_bar"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="@dimen/activity_horizontal_margin_extra_large"
+    android:maxHeight="@dimen/activity_horizontal_margin_extra_large"
+    android:layout_gravity="center"
+    android:padding="@dimen/activity_vertical_margin_large"
+    android:visibility="gone" />

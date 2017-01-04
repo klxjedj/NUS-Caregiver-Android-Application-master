@@ -1,0 +1,80 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crr_viewPager_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:background="@color/cardBackgroundColor"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.caregiving.services.android.caregiver.fragments.RecipientDemographicFragment">
+
+    <FrameLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_recipient_demographic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:divider="@android:color/transparent"
+                android:elevation="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/emergency_contact_person"
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/material_list_divider" />
+
+                <ListView
+                    android:id="@+id/list_recipient_emergency_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/white"
+                    android:divider="@android:color/transparent"
+                    android:elevation="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

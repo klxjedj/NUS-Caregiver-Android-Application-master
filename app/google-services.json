@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "134084389952",
+    "firebase_url": "https://carebeacon-21a5c.firebaseio.com",
+    "project_id": "carebeacon-21a5c",
+    "storage_bucket": "carebeacon-21a5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134084389952:android:9796b599adda3f0f",
+        "android_client_info": {
+          "package_name": "com.caregiving.services.android.caregiver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134084389952-qss22ul67s4haifecu6l9su558fqhdvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQdu46dkJp4FRkGVyXE6iGFGMpouRo2z8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

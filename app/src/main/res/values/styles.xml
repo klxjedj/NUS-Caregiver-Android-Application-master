@@ -1,0 +1,200 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:buttonStyle">@style/app_button</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/md_green_500</item>
+        <item name="android:textColorPrimary">@color/primary_text_light</item>
+        <item name="colorPrimaryDark">@color/md_green_700</item>
+        <item name="colorButtonNormal">@color/md_green_500</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- LoginActivity's Theme -->
+    <style name="LoginAcitvityTheme" parent="AppBaseTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- TabbedActivity's Theme -->
+
+    <!-- TabbedActivity's TabLayout button styling -->
+    <style name="navigationTabs">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <!-- Application General Button Styles -->
+    <style name="app_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:height">36dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Application's general text colors and styles -->
+    <color name="primary_text_light">#DE000000</color>
+    <color name="secondary_text_light">#8A000000</color>
+    <color name="disabled_text_light">#61000000</color>
+
+    <color name="primary_text_dark">#FFFFFFFF</color>
+    <color name="secondary_text_dark">#46FFFFFF</color>
+    <color name="disabled_text_dark">#80FFFFFF</color>
+
+    <style name="PrimaryText">
+        <item name="android:textColor">@color/primary_text_dark</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:textColor">@color/secondary_text_dark</item>
+    </style>
+
+    <style name="DisabledText">
+        <item name="android:textColor">@color/disabled_text_dark</item>
+    </style>
+
+    <style name="PrimaryText.Light">
+        <item name="android:textColor">@color/primary_text_light</item>
+    </style>
+
+    <style name="SecondaryText.Light">
+        <item name="android:textColor">@color/secondary_text_light</item>
+    </style>
+
+    <style name="DisabledText.Light">
+        <item name="android:textColor">@color/disabled_text_light</item>
+    </style>
+
+    <style name="AppBaseTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CareRecipientActivity" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppBaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TabStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="tabIndicatorColor">@color/colorSecondaryAccent</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="CareGiverTabStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="tabIndicatorColor">@color/colorSecondaryAccent</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">#6A9DD9</item>
+    </style>
+
+    <style name="StandardCard" parent="CardView">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardMaxElevation">8dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+    <style name="ClickableCard" parent="StandardCard">
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="CardTitle">
+        <item name="android:layout_marginBottom">@dimen/activity_horizontal_margin</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="CardContent">
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="CardFooterButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin_medium</item>
+    </style>
+
+    <style name="CardFooterDividedButton">
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">@dimen/activity_horizontal_margin_small</item>
+    </style>
+
+    <style name="CardLargeTitle">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="large_toolbar_title" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+    </style>
+
+    <style name="default_content_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:textSize">@dimen/default_font_size</item>
+    </style>
+
+    <style name="RequestServiceFragment" parent="AppBaseTheme">
+        <item name="colorAccent">@color/colorRequestService</item>
+    </style>
+
+    <style name="AppointmentsFragment" parent="AppBaseTheme">
+        <item name="colorAccent">@color/colorViewAppointments</item>
+    </style>
+
+    <style name="TentativeRequestsFragment" parent="AppBaseTheme">
+        <item name="colorAccent">@color/colorViewTentativeRequest</item>
+    </style>
+
+    <style name="ClickableView">
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ServiceRequestRatingBar" parent="AppBaseTheme">
+        <item name="colorControlNormal">@color/colorSecondaryAccent</item>
+        <item name="colorControlActivated">@color/colorRequestService</item>
+    </style>
+
+    <style name="CareGiverRatingBar" parent="AppBaseTheme">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/colorSecondaryAccent</item>
+    </style>
+
+    <style name="ReviewRatingBar" parent="AppBaseTheme">
+        <item name="colorControlNormal">@color/colorPrimaryText</item>
+        <item name="colorControlActivated">@color/colorSecondaryAccent</item>
+    </style>
+
+</resources>

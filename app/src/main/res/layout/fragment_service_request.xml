@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/request_item_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:minHeight="104dp"
+    app:show_mode="pull_out">
+
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/reject_request_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_line_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorButtonReject"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical|left"
+            android:text="@string/action_reject"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accept_request_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_line_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorButtonAccept"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical|right"
+            android:text="@string/action_accept"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <!-- Bottom View End -->
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:id="@+id/service_request_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recipient_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_person_24dp"
+            app:civ_border_color="@color/dividerColor"
+            app:civ_border_width="@dimen/divider_height"
+            app:civ_fill_color="@color/colorSecondaryText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_recipient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/colorPrimaryText" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Surface View End -->
+
+</com.daimajia.swipe.SwipeLayout>

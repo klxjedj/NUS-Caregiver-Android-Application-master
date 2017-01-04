@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/caregiver_list_item"
+    style="@style/StandardCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/caregiver_info"
+            style="@style/ClickableView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/caregiver_profile_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/profile_placeholder"
+                app:civ_border_color="@color/dividerColor"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/caregiver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin_small"
+                        android:layout_weight="0.9"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/medium_font_size" />
+
+                    <ImageView
+                        android:id="@+id/toggle_action_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.1"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:padding="@dimen/activity_horizontal_margin_small"
+                        android:src="@drawable/ic_more_horiz_24dp"
+                        android:tint="@color/colorSecondaryText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/caregiver_service_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_ring_volume_24dp"
+                    android:drawablePadding="@dimen/activity_horizontal_margin_small"
+                    android:drawableTint="@color/colorSecondaryText"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/default_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/rating_bar_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:id="@+id/caregiver_overall_rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:theme="@style/ServiceRequestRatingBar" />
+
+                    <TextView
+                        android:id="@+id/caregiver_overall_rating_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin_small"
+                        android:gravity="center"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/default_font_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/material_list_divider" />
+
+        <LinearLayout
+            android:id="@+id/action_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/profile_button"
+                style="@style/CardFooterDividedButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/card_profile_button" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/material_list_divider" />
+
+            <TextView
+                android:id="@+id/expertise_button"
+                style="@style/CardFooterDividedButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/card_expertise_button" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/material_list_divider" />
+
+            <TextView
+                android:id="@+id/reviews_button"
+                style="@style/CardFooterDividedButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/card_reviews_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

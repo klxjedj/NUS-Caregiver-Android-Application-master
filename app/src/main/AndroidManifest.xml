@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.caregiving.services.android.caregiver">
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- use permission on Android M -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme"
+        tools:replace="android:theme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LoginAcitvityTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".HelperActivity"
+            android:label="@string/app_logo"
+            android:noHistory="true"
+            android:theme="@style/AppBaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CareGiverMainActivity"
+            android:theme="@style/AppBaseTheme.NoActionBar" />
+        <activity
+            android:name=".RecordActivity"
+            android:theme="@style/AppBaseTheme.NoActionBar" />
+        <activity
+            android:name=".CareRecipientMainActivity"
+            android:theme="@style/CareRecipientActivity" />
+        <activity
+            android:name=".CareGiverActivity"
+            android:theme="@style/CareGiverActivity" />
+        <activity
+            android:name=".CareRecipientRequestServiceFormActivity"
+            android:theme="@style/RequestServiceForm" />
+
+    </application>
+
+</manifest>

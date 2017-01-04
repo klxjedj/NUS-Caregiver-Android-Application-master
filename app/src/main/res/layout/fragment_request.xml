@@ -1,0 +1,63 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crr_viewPager_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".fragments.carerecipient.RequestServiceFragment">
+
+    <FrameLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/request_service_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:divider="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/empty_request_list_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/empty_request_service_list" />
+
+            <TextView
+                android:id="@+id/list_loading_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/list_loading_error"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/load_data_progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxHeight="@dimen/activity_horizontal_margin_extra_large"
+            android:maxWidth="@dimen/activity_horizontal_margin_extra_large"
+            android:padding="@dimen/activity_vertical_margin_large"
+            android:theme="@style/RequestServiceFragment"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

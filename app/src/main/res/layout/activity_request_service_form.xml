@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.caregiving.services.android.caregiver.CareRecipientRequestServiceFormActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:fitsSystemWindows="false">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/request_service_form_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:theme="@style/AppBaseTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/request_service_form_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|snap"
+                app:popupTheme="@style/AppBaseTheme.PopupOverlay"
+                app:title="Request Service"
+                app:titleTextAppearance="@style/large_toolbar_title" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin_extra_large"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_vertical_margin_large"
+                    android:fillViewport="true"
+                    android:isScrollContainer="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/caregiver_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_person_24dp"
+                                android:drawablePadding="@dimen/activity_horizontal_margin"
+                                android:drawableTint="@color/secondary_text_light"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:hint="@string/caregiver_input_hint"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/appointment_date_input"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_date_range_24dp"
+                                android:drawablePadding="@dimen/activity_horizontal_margin"
+                                android:drawableTint="@color/secondary_text_light"
+                                android:focusable="false"
+                                android:hint="@string/date_input_hint"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/appointment_time_input"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_access_time_24dp"
+                                android:drawablePadding="@dimen/activity_horizontal_margin"
+                                android:drawableTint="@color/secondary_text_light"
+                                android:focusable="false"
+                                android:hint="@string/time_input_hint"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/care_service_category_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:drawableLeft="@drawable/ic_list_24dp"
+                            android:drawablePadding="@dimen/activity_horizontal_margin"
+                            android:drawableTint="@color/secondary_text_light"
+                            android:visibility="gone" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin_extra_large"
+                            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/special_needs_input"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_report_problem_24dp"
+                                android:drawablePadding="@dimen/activity_horizontal_margin"
+                                android:drawableTint="@color/secondary_text_light"
+                                android:hint="@string/special_needs_input_hint" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/request_service_button"
+                style="@style/ClickableView"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorRequestService"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin_medium"
+                android:text="@string/request_service_button"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

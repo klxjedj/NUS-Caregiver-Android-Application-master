@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">CareBeacon</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to LoginActivity -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_user_id">User Id</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_log_in">Login</string>
+
+    <!-- LoginActivity's first time login dialog -->
+    <string name="ftd_title">Change first time password</string>
+    <string name="ftd_content">A change of your password is required on your first time logging into the app.</string>
+    <string name="ftd_new_password">New Password</string>
+    <string name="ftd_confirm_password">Confirm</string>
+
+    <string name="pd_changing_password">Changing Password</string>
+    <string name="pd_please_wait">Please wait...</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_user_id">Username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="app_logo">Carebeacon</string>
+
+    <!-- Strings related to TabbedActivity -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_calendar">Calendar</string>
+    <string name="tab_profile">Profile</string>
+
+    <!-- Strings related to CareGiverMainActivity -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Navigation Drawer Strings -->
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Naivgation Drawer Services section strings -->
+    <string name="services_section">Services</string>
+    <string name="nav_requests">Requests</string>
+    <string name="nav_existing">Existing</string>
+    <string name="nav_completed">Completed</string>
+
+    <string name="fragment_request_title">Service Requests</string>
+    <string name="fragment_existing_title">Existing Services</string>
+
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_today">Today</string>
+    <string name="nav_week">Week</string>
+    <string name="nav_month">Month</string>
+
+    <!-- Navigation Drawer Accounts section strings -->
+    <string name="accounts_section">Account</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_logout">Logout</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <!-- Profile Fragment Strings -->
+    <string name="demographic_section_title">Demographic</string>
+
+    <!-- Toolbar menu items -->
+    <string name="action_edit_profile">Edit Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="action_accept">Accept</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_track">Track</string>
+    <string name="action_never_show_again">Never show again</string>
+    <string name="title_activity_care_recipient_record">CareRecipientRecordActivity</string>
+
+    <!-- Care services request related strings -->
+    <string name="empty_service_request_list">You currently do not have any care service requests.</string>
+    <string name="error_service_request_list">An error has occurred while trrying to retrieve your service requests. Please restart the app or reload the current screen. If the problem persists, contact the app admin for assistance.</string>
+    <string name="confirm_reject_dialog_title">Cancel Service Request</string>
+    <string name="confirm_reject_dialog_content">You can only cancel %1$d more %2$s this month. Confirm cancellation?</string>
+    <string name="confirm_reject_dialog_content_alert">You have already cancelled 3 service requests this month. Cancelling another service request will land you a fine. Confirm cancellation?</string>
+    <string name="confirm_cancel_dialog_confirm">Confirm</string>
+    <string name="confirm_cancel_dialog_cancel">Cancel</string>
+    <string name="confirm_reject_service_request">Confirm accept service request?</string>
+    <string name="confirm_accept_service_request">Confirm accept service request?</string>
+
+
+    <!-- Location Permission dialog -->
+    <string name="lpd_title">Application needs location access</string>
+    <string name="lpd_content">"Please grant location access so that the application can detect the care recipient's beacon.</string>
+
+
+    <!-- RecordActivity related strings -->
+    <string name="emergency_contact_person">Emergency Contact Person</string>
+
+    <string name="medical_illness_title">Medical illness</string>
+    <string name="empty_illness_text">No medical illness.</string>
+
+    <string name="allergy_title">Allergies</string>
+    <string name="allergy_empty_content">This care recipient has no allergies.</string>
+
+    <string name="special_needs_title">Special Needs</string>
+    <string name="special_needs_empty_content">No special needs are requested by this care recipient.</string>
+
+    <string name="family_history_title">Family History</string>
+
+    <string name="empty_referrals_text">Care recipient has no doctor referrals.</string>
+
+    <string name="loading_beacon_info">Loading beacon info</string>
+
+    <!-- AcceptedRequestFragment related strings -->
+    <string name="empty_existing_request">You currently do not have any existing care service requests.</string>
+    <string name="context_menu_title"></string>
+    <string name="title_activity_care_recipient">CareRecipientActivity</string>
+    <string name="family_history_empty_content">This care recipient has no genetic condition that is passed through his / her family history.</string>
+
+    <!-- CareRecipientMainActivity related strings -->
+    <string name="cra_toolbar_title">Home</string>
+
+    <string name="request_service_title">Request Service</string>
+    <string name="request_service_content">Select from a list of care givers to perform a care service for you.</string>
+    <string name="request_service_button">Request Now</string>
+
+    <string name="view_appointments_title">Appointments</string>
+    <string name="view_appointments_content">View existing confirmed appointments.</string>
+    <string name="view_appointments_button">View Now</string>
+
+    <string name="view_tentative_requests_title">Tentative Service Requests</string>
+    <string name="view_tentative_requests_content">View unconfirmed requested services.</string>
+    <string name="view_tentative_requests_button">View Now</string>
+
+    <string name="confirm_logout_dialog_title">Confirm Logout?</string>
+
+    <!-- CareRecipientMainActivity Request Service Fragment related strings -->
+    <string name="empty_request_service_list">There are currently no available care givers for you to request a care service.</string>
+    <string name="list_loading_error">A problem has occurred while loading for the list of available care givers. Please check if your internet connection is turned on and restart the app.</string>
+    <string name="card_profile_button">Profile</string>
+    <string name="card_expertise_button">Expertise</string>
+    <string name="card_reviews_button">Reviews</string>
+
+
+    <!-- CareRecipientRequestServiceFormActivity related strings -->
+    <string name="submit_service_request">Submitting service request...</string>
+
+    <string name="set_date_action">Set Date</string>
+    <string name="set_time_action">Set time</string>
+
+    <string name="caregiver_input_hint">Caregiver</string>
+    <string name="date_input_hint">Appointment Date</string>
+    <string name="time_input_hint">Appointment Time</string>
+    <string name="care_service_category_hint">Service Category</string>
+    <string name="special_needs_input_hint">Special Needs</string>
+
+    <string name="error_missing_appointment_date">Appointment date is required</string>
+    <string name="error_missing_appointment_time">Appointment time is required</string>
+    <string name="error_missing_special_needs">Specia needs is required</string>
+
+    <!-- ReviewsActivity related strings -->
+    <string name="reviews_activity_title">Reviews</string>
+
+    <!-- ReviewsFragment related strings -->
+    <string name="empty_reviews_list_text">%1$s has no care service review.</string>
+
+    <!-- CareServiceHistoryFragment related strings -->
+    <string name="empty_care_service_history_text">Recipient has no care service history</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="@string/nav_profile" />
+    </group>
+
+    <item android:title="@string/services_section">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_existing"
+                    android:icon="@drawable/ic_ring_volume_24dp"
+                    android:title="@string/nav_requests" />
+                <item
+                    android:id="@+id/nav_outstanding"
+                    android:icon="@drawable/ic_date_range_24dp"
+                    android:title="@string/nav_existing" />
+                <item
+                    android:id="@+id/nav_completed"
+                    android:icon="@drawable/ic_check_circle_24dp"
+                    android:title="@string/nav_completed" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/accounts_section">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings_24dp"
+                    android:title="@string/nav_settings" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_exit_to_app_24dp"
+                    android:title="@string/nav_logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
